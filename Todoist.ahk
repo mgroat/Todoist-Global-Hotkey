@@ -1,4 +1,6 @@
-url=https://todoist.com/ ;You can change this to a specific project URL, but you need a ` before the % sign
+url=https://todoist.com/ ;You can change this to a specific project URL, but you need a ` before the % sign. 
+;Also remove &v=??? to avoid linking to specific version
+
 ^!a:: ;ctrl-alt-a
 run % "chrome.exe" ( winExist("ahk_class Chrome_WidgetWin_1") ? " --new-window " : " " ) url
 sleep, 2000 ; 2 second delay, may be able to experiment with this some
